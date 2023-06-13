@@ -18,7 +18,12 @@ body {
 	padding: 30px 100px;
 	align-items: center;
 }
-
+.prix{
+	font-size: larger;
+    display: flex;
+    font-weight: bold;
+	}
+	
 .top-header .name {
 	font-size: 26px;
 }
@@ -99,6 +104,7 @@ body {
 }
 
 .gallery .nav {
+	cursor: pointer;
 	justify-content: center;
 }
 
@@ -126,6 +132,7 @@ body {
 }
 
 .gallery-item {
+	cursor: pointer;;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -375,4 +382,5 @@ form input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+
 }

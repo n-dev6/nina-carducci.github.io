@@ -2,19 +2,34 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+	<meta property="og:title" content="Nina Carducci - Photographe spécialisée en moments uniques">
+	<meta property="og:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle. Capturant des moments uniques et immortalisant les émotions à travers ses photos. Services de shooting photo, retouches et albums photo personnalisés. Contactez-nous dès maintenant pour vos besoins photographiques.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="URL_DU_SITE">
+	<meta property="og:image" content="URL_DE_L_IMAGE">
+	<meta property="og:image:alt" content="Description de l'image">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@COMPTE_TWITTER">
+	<meta name="twitter:title" content="Nina Carducci - Photographe spécialisée en moments uniques">
+	<meta name="twitter:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle. Capturant des moments uniques et immortalisant les émotions à travers ses photos. Services de shooting photo, retouches et albums photo personnalisés. Contactez-nous dès maintenant pour vos besoins photographiques.">
+	<meta name="twitter:image" content="URL_DE_L_IMAGE">
+
 	<title>Nina Carducci - Photographe spécialisée en moments uniques</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle. Capturant des moments uniques et 
 	immortalisant les émotions à travers ses photos. Services de shooting photo, retouches et albums photo personnalisés. 
 	Contactez-nous dès maintenant pour vos besoins photographiques.">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<!-- <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	
+	<script type="application/ld+json" src="photographer.jsonld"></script>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
 </head>
@@ -74,7 +89,7 @@
 	</div>
 </div>
 <div id="gallery">
-	<h3 class="title">Portfolio</h3>
+	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"alt ="Photo prise dans un concert"/> 
@@ -98,7 +113,7 @@
 	</div>
 </div>
 <div id="services">
-	<h3 class="title">Mes services</h3>
+	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
@@ -106,7 +121,7 @@
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 			</div>
 			<div class="service__price">
-				<h4>350€/demi journée</h4>
+				<span class="prix">350€/demi journée</span>
 				<span>Matériel, déplacement inclus</span>
 			</div>
 
@@ -117,7 +132,7 @@
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 			</div>
 			<div class="service__price">
-				<h4>50€/photo</h4>
+				<span class="prix">50€/photo</span>
 				<span>2 AR par photo</span>
 			</div>
 		</div>
@@ -127,7 +142,7 @@
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 			</div>
 			<div class="service__price">
-				<h4>400€ album A4</h4>
+				<span class="prix">400€ album A4</span>
 				<span>30 pages recto/verso</span>
 			</div>
 		</div>
@@ -144,7 +159,7 @@
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
+			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
 				<label for="nom">Nom</label>
