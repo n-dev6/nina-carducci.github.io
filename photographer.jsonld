@@ -9,6 +9,20 @@
     "addressCountry": "France"
   },
   "telephone": "0556677889",
-  "email": "Adresse e-mail"
+  "email": "Adresse e-mail",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "lundi",
+      "mardi",
+      "mercredi",
+      "jeudi",
+      "vendredi"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+  },
+  "priceRange": "€€"
 }
+
 
