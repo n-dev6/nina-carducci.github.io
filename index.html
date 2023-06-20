@@ -25,15 +25,45 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
     />
-	<script type="application/ld+json" src="photographer.jsonld"></script>
 	<link rel="icon" type="image/png" href="assets/images/camera.ico">
-	<script src="./assets/jquery.slim.min.js"></script>
+	<script src="./assets/jquery.slim.min.js" defer></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="./assets/bootstrap/bootstrap.min.js" defer></script>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"  />
+	
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer />
 	<script src="./assets/scripts.js" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
-	<link rel="stylesheet" href="./assets/style.min.css" media="all" />
+	<link rel="stylesheet" href="./assets/style.min.css" media="all" defer/>
+<script src="./assets/bootstrap/bootstrap.min.js" defer></script>
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "Nina Carducci",
+	  "telephone": "05 56 67 78 89",
+	  "openingHoursSpecification": [
+		{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+			],
+			"opens": "10:00",
+			"closes": "19:00"
+		}],
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "France"
+		},
+		"image": "./assets/images/nina.webp/"
+	}
+</script>
+	
 </head>
 <body>
 <div class="top-header">
@@ -85,7 +115,8 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.avif" width="560" height="560" alt ="Photo d'une femme prise par un photographe"> 
+		<img src="./assets/images/nina.avif" width="600" height="595" alt="Photo d'une femme prise par un photographe">
+
 	</div>
 	<div id="about-me">
 		<p class="about-me__title">A propos de moi</p>
@@ -103,7 +134,7 @@
 			<img data-gallery-tag="Entreprises" width="440" height="440" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"alt ="Photo d'une employée prise par un photographe"loading="lazy"/>
 			<img data-gallery-tag="Mariages" width="440" height="440" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"alt ="Photo de mains devant un arbre"/>
 			<img data-gallery-tag="Portrait" width="440" height="440" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"alt ="Photo d'un homme prise par un photographe"loading="lazy"/>
-			<img data-gallery-tag="Mariages" width="440" height="440"class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"alt ="Photo d'un couple mariage"/>
+			<img data-gallery-tag="Mariages" width="440" height="440"class="gallery-item" src="./assets/images/gallery/mariage/mariage.jpg"alt ="Photo d'un couple mariage"/>
 			<img data-gallery-tag="Portrait" width="440" height="440" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"alt ="Photo d'une femme prise par un photographe"loading="lazy"/>
 			<img data-gallery-tag="Concert" width="440" height="440" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"alt ="Photo d'un artiste en performance lors d'un concert"loading="lazy"/>
 			<img data-gallery-tag="Entreprises" width="440" height="440" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"alt ="Photo d'une femme en train de travailler prise par un photographe"loading="lazy"/>
@@ -178,10 +209,12 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" width="418" height="418" alt ="Photo d'une camera">
+			<img src="./assets/images/camera.webp" width="1012" height="1010" alt="Photo d'une caméra">
+
 		</div>
 	</div>
 </div>
 
 </body>
+
 </html>
